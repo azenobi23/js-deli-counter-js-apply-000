@@ -1,13 +1,14 @@
 function takeANumber(katzDeliLine, name) {
-  katzDeliLine.push(name)  //pushes new name to end of array
-  return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line." //returns new customer position in line
+  var number = [];
+  
+  return number;
 }
 
 function nowServing(katzDeliLine, name) {
   if (katzDeliLine.length === 0) { //checks amt of ppl in line
     return "There is nobody waiting to be served!"
   } else {
-    var name = katzDeliLine[0]; 
+    name = katzDeliLine[0]; 
     katzDeliLine.splice(0, 1); //removes 1st person in line and reorganizes
     return "Currently serving " + name + ".";
   }
